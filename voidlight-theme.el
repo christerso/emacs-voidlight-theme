@@ -65,7 +65,30 @@
    ;; Feedback and errors
    `(success ((,class (:foreground ,gray)))) ;; Success messages
    `(warning ((,class (:foreground ,orange)))) ;; Warnings
-   `(error ((,class (:foreground ,red)))))) ;; Errors
+   `(error ((,class (:foreground ,red)))) ;; Errors
+
+   ;; EWW support
+   `(eww-form-submit ((,class (:foreground ,subdued-white :background ,selection :box (:line-width 2 :color ,gray)))))
+   `(eww-form-checkbox ((,class (:foreground ,subdued-white :background ,selection))))
+   `(eww-form-select ((,class (:foreground ,subdued-white :background ,selection :box (:line-width 1 :color ,gray)))))
+   `(eww-form-text ((,class (:foreground ,foreground :background ,block-background :box (:line-width 1 :color ,gray)))))
+   `(eww-form-textarea ((,class (:foreground ,foreground :background ,block-background :box (:line-width 1 :color ,gray)))))
+   `(eww-link ((,class (:foreground ,blue :underline t))))
+   `(eww-link-visited ((,class (:foreground ,magenta :underline t))))
+   `(eww-valid-certificate ((,class (:foreground ,orange))))
+   `(eww-invalid-certificate ((,class (:foreground ,red :weight bold))))
+   `(eww-heading-1 ((,class (:foreground ,orange :weight bold :height 1.4))))
+   `(eww-heading-2 ((,class (:foreground ,orange :weight bold :height 1.2))))
+   `(eww-heading-3 ((,class (:foreground ,orange :weight bold :height 1.1))))
+   `(eww-heading-4 ((,class (:foreground ,orange :weight bold))))
+   `(eww-heading-5 ((,class (:foreground ,orange))))
+   `(eww-heading-6 ((,class (:foreground ,orange))))
+   `(eww-paragraph ((,class (:foreground ,foreground))))
+   `(eww-bullet ((,class (:foreground ,orange))))
+   `(eww-highlighted ((,class (:foreground ,orange :weight bold))))
+   `(eww-plain-text ((,class (:foreground ,foreground))))
+   `(eww-table ((,class (:foreground ,foreground :background ,block-background))))
+   `(eww-code ((,class (:foreground ,warm-amber :background ,block-background :box (:line-width 1 :color ,gray)))))))
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path)
