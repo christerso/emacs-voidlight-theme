@@ -36,24 +36,24 @@
    `(underline ((,class (:underline t))))
 
    ;; Syntax highlighting
-   `(font-lock-builtin-face ((,class (:foreground ,orange :background nil)))) ;; Built-in keywords
-   `(font-lock-comment-face ((,class (:foreground ,comment :background nil)))) ;; Comments
-   `(font-lock-constant-face ((,class (:foreground ,blue :background nil)))) ;; Constants
-   `(font-lock-function-name-face ((,class (:foreground ,function-blue :background nil)))) ;; Function names with subtle distinction
-   `(font-lock-keyword-face ((,class (:foreground ,orange :background nil)))) ;; Keywords
-   `(font-lock-string-face ((,class (:foreground ,darker-gray :background nil)))) ;; Strings, slightly darker for subtlety
-   `(font-lock-variable-name-face ((,class (:foreground ,warm-amber :background nil)))) ;; Variables
-   `(font-lock-type-face ((,class (:foreground ,blue :background nil)))) ;; Class names and types
-   `(font-lock-preprocessor-face ((,class (:foreground ,header-lighter :background nil)))) ;; Includes and preprocessor directives
-   `(font-lock-doc-face ((,class (:foreground ,gray :background nil)))) ;; Documentation strings
+   `(font-lock-builtin-face ((,class (:foreground ,orange)))) ;; Built-in keywords
+   `(font-lock-comment-face ((,class (:foreground ,comment)))) ;; Comments
+   `(font-lock-constant-face ((,class (:foreground ,blue)))) ;; Constants
+   `(font-lock-function-name-face ((,class (:foreground ,function-blue)))) ;; Function names with subtle distinction
+   `(font-lock-keyword-face ((,class (:foreground ,orange)))) ;; Keywords
+   `(font-lock-string-face ((,class (:foreground ,darker-gray)))) ;; Strings, slightly darker for subtlety
+   `(font-lock-variable-name-face ((,class (:foreground ,warm-amber)))) ;; Variables
+   `(font-lock-type-face ((,class (:foreground ,blue)))) ;; Class names and types
+   `(font-lock-preprocessor-face ((,class (:foreground ,header-lighter)))) ;; Includes and preprocessor directives
+   `(font-lock-doc-face ((,class (:foreground ,gray)))) ;; Documentation strings
 
    ;; Links and buttons
-   `(link ((,class (:foreground ,subdued-white :underline t :background nil)))) ;; Subdued white for links
-   `(button ((,class (:foreground ,subdued-white :background nil :underline nil)))) ;; Subdued white for buttons
+   `(link ((,class (:foreground ,subdued-white :underline t)))) ;; Subdued white for links
+   `(button ((,class (:foreground ,subdued-white :underline nil)))) ;; Subdued white for buttons
 
    ;; UI Elements
-   `(region ((,class (:background ,selection :foreground nil)))) ;; Blue-gray for selected text
-   `(highlight ((,class (:background ,current-line :foreground nil)))) ;; Subtle highlight for the current line
+   `(region ((,class (:background ,selection)))) ;; Blue-gray for selected text
+   `(highlight ((,class (:background ,current-line)))) ;; Subtle highlight for the current line
    `(cursor ((,class (:background ,orange)))) ;; Cursor
    ;; Mode-line styling
    `(mode-line ((,class (:foreground ,foreground :background ,current-line :box nil))))
@@ -63,9 +63,9 @@
    `(linum ((,class (:foreground ,comment :background ,background)))) ;; Line numbers
 
    ;; Feedback and errors
-   `(success ((,class (:foreground ,gray :background nil)))) ;; Success messages
-   `(warning ((,class (:foreground ,orange :background nil)))) ;; Warnings
-   `(error ((,class (:foreground ,red :background nil)))))) ;; Errors
+   `(success ((,class (:foreground ,gray)))) ;; Success messages
+   `(warning ((,class (:foreground ,orange)))) ;; Warnings
+   `(error ((,class (:foreground ,red)))))) ;; Errors
 
 ;;;###autoload
 (when (and (boundp 'custom-theme-load-path)
